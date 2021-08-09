@@ -1,6 +1,7 @@
-import { MaterialModule } from './../../common/material/material.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { MaterialModule } from './../../common/material/material.module';
 
 import { ArtifactService } from './artifact.service';
 
