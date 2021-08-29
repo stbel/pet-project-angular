@@ -1,1 +1,23 @@
-<p>artifact-form works!</p>
+<h2>artifact-form works!</h2>
+
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+  <div class="app-form-group">
+    <mat-form-field appearance="outline">
+      <mat-label for="nome">Nome</mat-label>
+      <input matInput ngModel id="nome" type="text" name="nome" />
+    </mat-form-field>
+  </div>
+  <div class="app-form-group">
+    <mat-form-field appearance="outline">
+      <mat-label for="descricao">Descrição</mat-label>
+      <textarea
+        matInput
+        ngModel
+        id="descricao"
+        type="text"
+        name="descricao"
+      ></textarea>
+    </mat-form-field>
+  </div>
+  <button mat-button type="submit">Salvar</button>
+</form>

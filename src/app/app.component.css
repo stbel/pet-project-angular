@@ -2,3 +2,34 @@
   width: 70vw;
   margin: 0 auto;
 }
+
+.app-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-horizontal-list{
+  display: flex;
+  align-items: center;
+}
+
+.app-logo-link {
+  text-decoration: none;
+  color: darkslategray;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.app-nav-link {
+  text-decoration: none;
+  color: rebeccapurple;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.app-funct-nav-link {
+  text-decoration: none;
+  color: #390f64;
+  padding: 1rem;
+  font-weight: 700;
+}

@@ -1,0 +1,18 @@
+.app-form-group{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  width: 40vw;
+  justify-content: space-between;
+}
+.app-form-group input{
+  padding: 5px;
+  width: 30vw;
+}
+.app-form-group textarea{
+  padding: 5px;
+  width: 30vw;
+  height: 30vh;
+  resize: none;
+
+}

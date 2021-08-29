@@ -1,18 +1,8 @@
-<mat-card>
-  <mat-card-title>Personage</mat-card-title>
-  <mat-card-content>
-    Personage components:
-    <ul>
-      <li>
-        <app-personage-list></app-personage-list>
-      </li>
-      <li>
-        <app-personage-detail></app-personage-detail>
-      </li>
-      <li>
-        <app-personage-form></app-personage-form>
-      </li>
-    </ul>
-  </mat-card-content>
-  <mat-card-footer>Personage footer</mat-card-footer>
-</mat-card>
+<div>
+  <nav>
+    <a routerLink="list">List</a>
+    <a routerLink="form">Form</a>
+    <a routerLink="detail">Detail</a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

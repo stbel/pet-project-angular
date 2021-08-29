@@ -1,3 +1,4 @@
+import { CollectiveRoutingModule } from './collective-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,6 +10,7 @@ import { CollectiveMainComponent } from './collective-main/collective-main.compo
 import { CollectiveDetailComponent } from './collective-detail/collective-detail.component';
 import { CollectiveFormComponent } from './collective-form/collective-form.component';
 import { CollectiveListComponent } from './collective-list/collective-list.component';
+import { CollectiveDashboardComponent } from './collective-dashboard/collective-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,9 @@ import { CollectiveListComponent } from './collective-list/collective-list.compo
     CollectiveMainComponent,
     CollectiveDetailComponent,
     CollectiveListComponent,
+    CollectiveDashboardComponent,
   ],
-  imports: [CommonModule, MaterialModule],
-  exports: [CollectiveMainComponent],
+  imports: [CommonModule, MaterialModule, CollectiveRoutingModule],
   providers: [CollectiveService],
 })
 export class CollectiveModule {}

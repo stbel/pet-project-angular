@@ -1,22 +1,23 @@
 import { NgModule } from '@angular/core';
 
-import { PlaceModule } from './place/place.module';
-import { PersonageModule } from './personage/personage.module';
-import { CollectiveModule } from './collective/collective.module';
 import { ArtifactModule } from './artifact/artifact.module';
+import { CollectiveModule } from './collective/collective.module';
+import { PersonageModule } from './personage/personage.module';
+import { PlaceModule } from './place/place.module';
+import { StoryModule } from './story/story.module';
+import { WorldModule } from './world/world.module';
+
+const CADASTER_MODULES = [
+  ArtifactModule,
+  CollectiveModule,
+  PersonageModule,
+  PlaceModule,
+  StoryModule,
+  WorldModule,
+];
 
 @NgModule({
-  imports: [
-    ArtifactModule,
-    CollectiveModule,
-    PersonageModule,
-    PlaceModule,
-  ],
-  exports: [
-    ArtifactModule,
-    CollectiveModule,
-    PersonageModule,
-    PlaceModule,
-  ]
+  imports: [CADASTER_MODULES],
+  exports: [CADASTER_MODULES],
 })
-export class CadasterModule { }
+export class CadasterModule {}
