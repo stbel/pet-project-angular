@@ -7,22 +7,17 @@ import { PlaceModule } from './place/place.module';
 import { StoryModule } from './story/story.module';
 import { WorldModule } from './world/world.module';
 
+const CADASTER_MODULES = [
+  ArtifactModule,
+  CollectiveModule,
+  PersonageModule,
+  PlaceModule,
+  StoryModule,
+  WorldModule,
+];
+
 @NgModule({
-  imports: [
-    ArtifactModule,
-    CollectiveModule,
-    PersonageModule,
-    PlaceModule,
-    StoryModule,
-    WorldModule,
-  ],
-  exports: [
-    ArtifactModule,
-    CollectiveModule,
-    PersonageModule,
-    PlaceModule,
-    StoryModule,
-    WorldModule,
-  ]
+  imports: [CADASTER_MODULES],
+  exports: [CADASTER_MODULES],
 })
-export class CadasterModule { }
+export class CadasterModule {}
