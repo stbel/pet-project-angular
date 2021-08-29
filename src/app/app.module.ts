@@ -1,3 +1,5 @@
+import { HomeModule } from './common/home/home.module';
+import { MaterialModule } from './common/material/material.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,16 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CadasterModule } from './cadaster/cadaster.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
-
-    CadasterModule
+    MaterialModule,
+    AppRoutingModule,
+    CadasterModule,
+    HomeModule,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

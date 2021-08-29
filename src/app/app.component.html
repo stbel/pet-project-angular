@@ -1,13 +1,24 @@
-<section class='app-container'>
-
-  <h2>Started</h2>
-
-  <app-artifact-main></app-artifact-main>
-
-  <app-collective-main></app-collective-main>
-
-  <app-personage-main></app-personage-main>
-
-  <app-place-main></app-place-main>
-
+<section class="app-container">
+  <mat-toolbar class="app-toolbar">
+    <nav>
+      <a class="app-logo-link" routerLink="/">Application</a>
+    </nav>
+    <mat-nav-list class='app-horizontal-list'>
+      <a mat-list-item routerLink="/artifact" routerLinkActive="active"
+        >Artifact</a
+      >
+      <a mat-list-item routerLink="/collective" routerLinkActive="active"
+        >Collective</a
+      >
+      <a mat-list-item routerLink="/personage" routerLinkActive="active"
+        >Personage</a
+      >
+      <a mat-list-item routerLink="/place" routerLinkActive="active">Place</a>
+      <a mat-list-item routerLink="/story" routerLinkActive="active">Story</a>
+      <a mat-list-item routerLink="/world" routerLinkActive="active">World</a>
+    </mat-nav-list>
+  </mat-toolbar>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
 </section>
